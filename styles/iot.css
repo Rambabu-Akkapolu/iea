@@ -289,11 +289,19 @@ nav .content {
     max-width: 1200px;
     margin: auto;
 }
-
+/* --------main-section-styles-start----- */
 h1 {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 70px;
+    color:#171c24;
+    font-weight: bold;
+}
+.project-level-title{
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  margin: 1em;
 }
 
 /* Project Card Styles */
