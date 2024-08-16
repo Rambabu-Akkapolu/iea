@@ -176,7 +176,7 @@ nav .content {
 }
 /* ------------home-page----- */
 .Home-page{
-  background-image: url(./assets/background.jpg);
+  background-image: url(./assets/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -363,6 +363,17 @@ nav .content {
 .container1 {
     flex: 1 1 100%; 
   }
+  .Home-page{
+  background-image: url(./assets/mobile-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 110vh;
+  padding: 20px;
+  top: 70px;
+  position: relative;
+  overflow-x: hidden;
+}
 }
 /* ------button---- */
 .order-button{
