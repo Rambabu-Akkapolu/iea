@@ -68,14 +68,14 @@
       <h2>Contact Us</h2>
     </div>
     <div class="container">
-      <form method="post" action="https://script.google.com/macros/s/AKfycbykKrMEAQy7WwOYMsypQwgkrpvzcI9mQbn6NxpVGTsbS_x5OAHNyzE6_PePGNYWv_QF/exec" name="contact-form">
-        <input type="text" name="your-name" placeholder="Name">
-        <input type="text" name="your-number" placeholder="Number">
-        <input type="email" name="your-email" placeholder="Email">
-        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+      <form method="post" action="https://script.google.com/macros/s/AKfycbykKrMEAQy7WwOYMsypQwgkrpvzcI9mQbn6NxpVGTsbS_x5OAHNyzE6_PePGNYWv_QF/exec" name="contact-form" id="contact-form">
+        <input type="text" name="your-name" placeholder="Name" required>
+        <input type="text" name="your-number" placeholder="Number" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits" required>
+        <input type="email" name="your-email" placeholder="Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
         <input type="submit" value="Submit" id="submit">
-      </form>
-    </div>
+    </form>
+</div>
   </div>
     <!-- ---------footer-section-start--- -->
   <footer>
@@ -96,8 +96,6 @@
   <div class="copyright">
       &copy; 2024 INNOVATIVE ENGINEERING ALLY. All rights reserved.
   </div>  
-
-
   <script src="js\contact.js"></script>
 </body>
 </html>

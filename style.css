@@ -174,8 +174,6 @@ nav .content {
 .wrapper input[type="checkbox"] {
   display: none;
 }
-
-
 /* ------------home-page----- */
 .Home-page{
   background-image: url(./assets/background.jpg);
@@ -203,7 +201,6 @@ nav .content {
   background: linear-gradient(to bottom,#162f1d,#172720);
   
 }
-
 /* ---------projects-page-start------- */
 .projects-section{
   margin-top: 60px;
@@ -293,7 +290,6 @@ nav .content {
   }
    
 }
-
 @media screen and (max-width: 900px){
   .wrapper .menu-icon {
   color: #fff;
@@ -305,7 +301,7 @@ nav .content {
   display: block;
 }
  .container1 {
-    flex: 1 1 45%; /* For laptops (2 columns) */
+    flex: 1 1 45%; 
   }
   
   .wrapper .whatsapp-icon {
@@ -365,12 +361,10 @@ nav .content {
   display: block;
 }
 .container1 {
-    flex: 1 1 100%; /* For smaller mobile screens (1 column, full width) */
+    flex: 1 1 100%; 
   }
 }
-
 /* ------button---- */
-
 .order-button{
   border-radius: 15px;
   border: none;
@@ -391,7 +385,6 @@ nav .content {
 
 
 /* -----footer--- */
-/*footer*/
 footer {
   display: flex;
   justify-content: space-between;
@@ -563,18 +556,15 @@ textarea{
   margin: 2em;
 }
 }
-
 /* Extra Small Devices (less than 360px) */
 @media screen and (max-width: 360px) {
   .footer-section {
       padding: 5px;
       text-align: center;
   }
-
   h2 {
       font-size: 1.3rem;
   }
-
   p, a {
       font-size: 1rem;
   }
@@ -585,5 +575,5 @@ textarea{
 	border-radius: 10px;
 	background-color: #072d42;
   margin: 2em;
-}
+  }
 }
