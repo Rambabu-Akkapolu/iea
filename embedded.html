@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Projects</title>
+    <link rel="stylesheet" href="styles/embedded.css">
+    
+</head>
+<body>
+    <div class="main-container">
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo"><a href="index.html"><img src="./assets/logo.png" alt="Logo"></a></div>
+          <ul class="links">
+            <li><a href="iot.html">IoT</a></li>
+            <li><a href="vlsi.html">VLSI</a></li>
+            <li><a href="embedded.html">Embedded</a> </li>
+            <li><a href="Software.html" >Software</a></li>
+            <li><a href="https://wa.me/918885370911"><button class="order-button"><i class="fab fa-whatsapp"></i> Order Now </button></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+     </div>
+    <div class="container">
+        <h1>Embedded Projects</h1>
+        <div class="card" onclick="openModal('Project 1 Title', 'assets\embedded\img\Project1_detail.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+            <img src="assets\embedded\img\Project1_detail.jpg" alt="Project 1">
+            <h2>Project 1 Title</h2>
+        </div>
+        <div class="card" onclick="openModal('Project 2 Title', 'assets\embedded\img\Project2_detail.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+            <img src="assets\embedded\img\Project2_detail.jpg" alt="Project 2">
+            <h2>Project 2 Title</h2>
+        </div>
+        <div class="card" onclick="openModal('Project 3 Title', 'assets\embedded\img\Project3_detail.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+            <img src="assets\embedded\img\Project3_detail.jpg" alt="Project 3">
+            <h2>Project 3 Title</h2>
+        </div>
+        <div class="card" onclick="openModal('Project 4 Title', 'assets\embedded\img\Project4_detail.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+            <img src="assets\embedded\img\Project4_detail.jpg" alt="Project 4">
+            <h2>Project 4 Title</h2>
+        </div>
+        <div class="card" onclick="openModal('Project 5 Title', 'assets\embedded\img\Project5_detail.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+            <img src="assets\embedded\img\Project5_detail.jpg" alt="Project 5">
+            <h2>Project 5 Title</h2>
+        </div>
+        <div class="card" onclick="openModal('Project 6 Title', 'assets\embedded\img\Project6_detail.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+            <img src="assets\embedded\img\Project6_detail.jpg" alt="Project 6">
+            <h2>Project 6 Title</h2>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <img id="modalImage" src="" alt="Project Image">
+                <div class="modal-details">
+                    <h2 id="modalTitle">Project Title</h2>
+                    <p id="modalDescription">Project Description</p>
+                    <a id="orderLink" href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer section-->
+       <footer>
+        <div class="footer-section">
+          <h2>About Us</h2>
+          <p>We are a team of professionals specializing in IT and VLSI project development. Our expertise spans across various domains to deliver innovative solutions.</p>
+      </div>
+      <div class="footer-section footer-center">
+        <h2>Project Domains</h2>
+        <ul>
+            <p><a href="iot.html" style="color: white;">IoT</a></p>
+            <p><a href="vlsi.html" style="color: white;">VLSI</a></p>
+            <p><a href="embedded.html" style="color: white;"> Embedded</a></p>
+            <p><a href="software.html" style="color: white;">Software</a></p>
+        </ul>
+    </div>
+          
+    </footer>
+    <div class="copyright">
+        &copy; 2024 INNOVATIVE ENGINEERING ALLY. All rights reserved.
+    </div>
+
+    <script>
+        function openModal(title, imageSrc, description) {
+            document.getElementById('modalTitle').innerText = title;
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('modalDescription').innerText = description;
+            document.getElementById('orderLink').href = "https://wa.me/?text=I'm%20interested%20in%20ordering%20" + encodeURIComponent(title);
+            document.getElementById('projectModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
