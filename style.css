@@ -179,9 +179,9 @@ nav .content {
   background-image: url(./assets/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   background-position: center;
   height: 110vh;
-  padding: 20px;
   top: 70px;
   position: relative;
   overflow-x: hidden;
@@ -367,9 +367,9 @@ nav .content {
   background-image: url(./assets/mobile-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   background-position: center;
   height: 110vh;
-  padding: 20px;
   top: 70px;
   position: relative;
   overflow-x: hidden;
@@ -566,6 +566,17 @@ textarea{
 	background-color: #072d42;
   margin: 2em;
 }
+.Home-page{
+  background-image: url(./assets/mobile-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  height: 110vh;
+  top: 70px;
+  position: relative;
+  overflow-x: hidden;
+}
 }
 /* Extra Small Devices (less than 360px) */
 @media screen and (max-width: 360px) {
@@ -587,4 +598,15 @@ textarea{
 	background-color: #072d42;
   margin: 2em;
   }
+  .Home-page{
+  background-image: url(./assets/mobile-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  height: 110vh;
+  top: 70px;
+  position: relative;
+  overflow-x: hidden;
+}
 }
