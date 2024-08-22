@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);
-.wrapper .menu-icon,
-.wrapper .whatsapp-icon {
+.wrapper .menu-icon{
   color: #fff;
   font-size: 18px;
   line-height: 70px;
@@ -30,12 +29,36 @@ html {
   padding-right: 5px;
   padding-left: 5px;
 }
-.order-button,
-.order-button-2 {
-  padding: 0.5em;
-  animation: 1.8s ease-in-out infinite pulse;
+
+/* ----orderbutton----- */
+.order-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4em;
+  border: solid 0.2px #000000;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
   cursor: pointer;
-  font-weight: 700;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+.order-button:hover {
+  color: #fff;
+  background-color: #171c24;
+  border-color: #fff;
+}
+.whatsapp-icon{
+  height: 20px;
+  width: 20px;
+}
+.button-2{
+  background-color: #162f1d;
+  color: white;
+}
+.button-2:hover{
+  box-shadow: rgb(11, 35, 21) 5px 5px 5px;
 }
 nav .content .links {
   margin-left: 80px;
@@ -136,6 +159,10 @@ nav .content {
 }
 .content .links li a:hover,
 .content .links li label:hover {
+  background: none;
+}
+.content .links li:not(:last-child) a:hover,
+.content .links li:not(:last-child) label:hover {
   background: #323c4e;
 }
 .wrapper .menu-icon {
@@ -148,14 +175,14 @@ nav .content {
     cursor: pointer;
     width: 32px;
     height: 32px;
-    margin-top: 5px;
+    margin-top: 24px;
     display: inline-block;
 }
 .hidden {
     display: none;
 }
 .Home-page {
-  background-image: url(./assets/banner.jpg);
+  background-image: url(./assets/banner.webp);
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -257,8 +284,7 @@ nav .content {
   .container1 {
     flex: 1 1 45%;
   }
-  .content .links li a.desktop-link,
-  .wrapper .whatsapp-icon {
+  .content .links li a.desktop-link{
     display: none;
   }
   .wrapper #show-menu:checked ~ .menu-icon i::before {
@@ -313,7 +339,7 @@ nav .content {
     flex: 1 1 100%;
   }
   .Home-page {
-    background-image: url(./assets/mobile-banner.png);
+    background-image: url(./assets/mobile-banner.webp);
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -324,22 +350,10 @@ nav .content {
     overflow-x: hidden;
   }
 }
-.order-button {
-  border-radius: 15px;
-  border: none;
-  color: #000;
-}
-.order-button svg{
-  margin-right: 8px;
-}
 .copyright,
 footer {
   background-color: #171c24;
   border-top: 1px solid #ddd;
-}
-.order-button:hover {
-  color: #fff;
-  background-color: #171c24;
 }
 footer {
   display: flex;
@@ -487,7 +501,7 @@ input {
     margin: 2em;
   }
   .Home-page {
-    background-image: url(./assets/mobile-banner.png);
+    background-image: url(./assets/mobile-banner.webp);
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -519,7 +533,7 @@ input {
     margin: 2em;
   }
   .Home-page {
-    background-image: url(./assets/mobile-banner.png);
+    background-image: url(./assets/mobile-banner.webp);
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;

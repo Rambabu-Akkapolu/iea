@@ -55,10 +55,7 @@ nav .content .links{
   color: #25D366;
   font-size: 1.3em;
 }
-.whatsapp-icon{
-  height: 10px;
-  width: 10px;
-}
+
 .wrapper .menu-icon {
   order: 1;
 }
@@ -148,12 +145,16 @@ nav .content {
 .content .links li label {
   display: none;
 }
+/* --order button hover effect removed-- */
 
 .content .links li a:hover,
 .content .links li label:hover {
+  background: none;
+}
+.content .links li:not(:last-child) a:hover,
+.content .links li:not(:last-child) label:hover {
   background: #323c4e;
 }
-
 .wrapper .menu-icon {
   color: #fff;
   font-size: 18px;
@@ -170,6 +171,39 @@ nav .content {
 
 .wrapper input[type="checkbox"] {
   display: none;
+}
+.order-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4em;
+  border: solid 0.2px #000000;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  cursor: pointer;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+.order-button:hover {
+  color: #fff;
+  background-color: #171c24;
+  border-color: #fff;
+}
+.whatsapp-icon{
+  height: 20px;
+  width: 20px;
+}
+/* ----svg code---- */
+.icon {         
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin-top: 24px;
+    display: inline-block;
+}
+.hidden {
+    display: none;
 }
 
 /* Responsive code start */
@@ -202,9 +236,9 @@ nav .content {
     flex: 1 1 45%; 
   }
   
-  .wrapper .whatsapp-icon {
+  /* .wrapper .whatsapp-icon {
     display: none; 
-  }
+  } */
   .wrapper #show-menu:checked ~ .menu-icon i::before{
     content: "\f00d";
   }
@@ -261,23 +295,7 @@ nav .content {
 .container1 {
     flex: 1 1 100%; /* For smaller mobile screens (1 column, full width) */
   }
-}
-
-/* ------button---- */
-.order-button{
-  border-radius: 15px;
-  border: none;
-  padding: 0.5em;
-  font-weight: bold;
-  color: #000000;
-  animation: pulse 1.8s ease-in-out infinite;
-  cursor: pointer; 
-}
-.order-button:hover{
-  color: #fff;
-  background-color: #171c24;
-}
-/* .order-button {
+  .order-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -295,13 +313,26 @@ nav .content {
   background-color: #171c24;
   border-color: #fff;
 }
-.whatsapp-icon {
-    width: 5px;
-    height: 25px;
+.whatsapp-icon{
+  height: 20px;
+  width: 20px;
+}
+}
+
+/* ------button---- */
+/* .order-button{
+  border-radius: 15px;
+  border: none;
+  padding: 0.5em;
+  font-weight: bold;
+  color: #000000;
+  animation: pulse 1.8s ease-in-out infinite;
+  cursor: pointer; 
+}
+.order-button:hover{
+  color: #fff;
+  background-color: #171c24;
 } */
-
-
-
 
 /* Container */
 .container {

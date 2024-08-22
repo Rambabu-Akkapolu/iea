@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore a wide range of engineering final year projects for students. Order custom-made projects in IoT, VLSI, Embedded , software development, and more. Boost your academic performance with innovative, ready-to-deliver engineering project kits tailored to your requirements. Fast delivery and expert support available. Ideal for B.Tech, M.Tech, and diploma students.">
     <title>IOT Projects</title>
-    <link rel="stylesheet" href="styles/iot.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    
+    <link rel="stylesheet" href="styles/iot.css">    
 </head>
 <body>
     <div class="main-container">
         <div class="wrapper">
         <nav>
             <input type="checkbox" id="show-menu">
-            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <label for="show-menu" class="menu-icon">
+                <!-- SVG for menu icon -->
+                <svg id="menuIcon" class="icon" xmlns="assets/burger-menu.svg" viewBox="0 0 24 24">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <!-- SVG for close icon -->
+                <svg id="closeIcon" class="icon hidden" xmlns="assets/cross-icon.svg" viewBox="0 0 24 24">
+                    <path d="M6 18L18 6M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </label>
             <div class="content">
-            <div class="logo"><a href="index.html"><img src="./assets/logo.png" alt="Logo"></a></div>
+            <div class="logo"><a href="index.html"><img src="./assets/logo.webp" alt="Logo"></a></div>
             <ul class="links">
                 <li><a href="iot.html">IoT</a></li>
                 <li><a href="vlsi.html">VLSI</a></li>
                 <li><a href="embedded.html">Embedded</a> </li>
                 <li><a href="Software.html" >Software</a></li>
-                <li><a href="https://wa.me/918885370911"><button class="order-button"><i class="fab fa-whatsapp"></i> Order Now </button></a></li>
+                <li>
+                    <a href="https://wa.me/918885370911">
+                        <button class="order-button">
+                            <img src="assets/whatsapp.webp" alt="whatsapp icon" class="whatsapp-icon"> Order Now 
+                        </button>
+                    </a>
+                </li>
             </ul>
             </div>
         </nav>
@@ -201,10 +214,10 @@
       <div class="footer-section footer-center">
         <h2>Project Domains</h2>
         <ul>
-            <li><p><a href="iot.html" style="color: white;">IoT</a></p></li>
-            <li><p><a href="vlsi.html" style="color: white;">VLSI</a></p></li>
-            <li><p><a href="embedded.html" style="color: white;"> Embedded</a></p></li>
-            <li><p><a href="software.html" style="color: white;">Software</a></p></li>
+            <li><a href="iot.html" style="color: white;">IoT</a></li>
+            <li><a href="vlsi.html" style="color: white;">VLSI</a></li>
+            <li><a href="embedded.html" style="color: white;"> Embedded</a></li>
+            <li><a href="software.html" style="color: white;">Software</a></li>
         </ul>
      </div>
           
