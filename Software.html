@@ -6,22 +6,36 @@
     <meta name="description" content="Explore a wide range of engineering final year projects for students. Order custom-made projects in IoT, VLSI, Embedded , software development, and more. Boost your academic performance with innovative, ready-to-deliver engineering project kits tailored to your requirements. Fast delivery and expert support available. Ideal for B.Tech, M.Tech, and diploma students.">
     <title>Software Projects</title>
     <link rel="stylesheet" href="styles/Software.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>  
 </head>
 <body>
     <div class="main-container">
     <div class="wrapper">
       <nav>
         <input type="checkbox" id="show-menu">
-        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <label for="show-menu" class="menu-icon">
+            <!-- SVG for menu icon -->
+            <svg id="menuIcon" class="icon" xmlns="assets/burger-menu.svg" viewBox="0 0 24 24">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <!-- SVG for close icon -->
+            <svg id="closeIcon" class="icon hidden" xmlns="assets/cross-icon.svg" viewBox="0 0 24 24">
+                <path d="M6 18L18 6M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </label>
         <div class="content">
-          <div class="logo"><a href="index.html"><img src="./assets/logo.png" alt="Logo"></a></div>
+          <div class="logo"><a href="index.html"><img src="./assets/logo.webp" alt="Logo"></a></div>
           <ul class="links">
             <li><a href="iot.html">IoT</a></li>
             <li><a href="vlsi.html">VLSI</a></li>
             <li><a href="embedded.html">Embedded</a> </li>
             <li><a href="Software.html" >Software</a></li>
-            <li><a href="https://wa.me/918885370911"><button class="order-button"><i class="fab fa-whatsapp"></i> Order Now </button></a></li>
+            <li>
+                <a href="https://wa.me/918885370911">
+                    <button class="order-button">
+                        <img src="assets/whatsapp.webp" alt="whatsapp icon" class="whatsapp-icon"> Order Now 
+                    </button>
+                </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -29,51 +43,51 @@
     </div>
     <div class="container">
         <h1>Software  Projects</h1>
-        <div class="card" onclick="openModal('Library Management System', 'assets/software/library_management_system.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('Library Management System', 'assets/software/library_management_system.webp', 'The Library Management System (LMS) project aims to develop a comprehensive digital solution for managing library operations. This system will streamline the processes of cataloging, borrowing, returning, and tracking library materials, as well as managing user accounts and generating reports. The goal is to improve operational efficiency, enhance user experience, and provide robust tools for librarians and administrators.')">
             <img src="assets/software/library_management_system.webp" alt="Project 1" loading="lazy" >
             <h2>Library Management System</h2>
         </div>
-        <div class="card" onclick="openModal('Building Chatbots', 'assets/software/building_chatbots.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('Building Chatbots', 'assets/software/building_chatbots.webp', 'The Customer Service Chatbot project aims to develop an intelligent chatbot designed to handle customer inquiries, provide support, and streamline service operations. The chatbot will be integrated into websites or messaging platforms to enhance customer interactions, reduce response times, and improve overall satisfaction.')">
             <img src="assets/software/building_chatbots.webp" alt="Project 2" loading="lazy" >
             <h2>Building Chatbots</h2>
         </div>
-        <div class="card" onclick="openModal('Election Analysis', 'assets/software/election_analysis.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('Election Analysis', 'assets/software/election_analysis.webp', 'The Election Analysis System project aims to develop a comprehensive platform for analyzing and visualizing election data. This system will aggregate, process, and present electoral information to provide insights into voting patterns, candidate performance, and electoral trends. The goal is to offer a tool for political analysts, journalists, and researchers to make informed decisions and interpretations based on election results.')">
             <img src="assets/software/election_analysis.webp" alt="Project 3" loading="lazy" >
             <h2>Election Analysis</h2>
         </div>
-        <div class="card" onclick="openModal('Restaurant Website', 'assets/software/restaurant_website.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('Restaurant Website', 'assets/software/restaurant_website.webp', 'A restaurant website project system is a digital platform designed to represent a restaurants online presence. It serves as a virtual storefront, providing essential information about the restaurant, its menu, location, and more. Its a crucial tool for attracting new customers, building brand awareness, and streamlining operations.')">
             <img src="assets/software/restaurant_website.webp" alt="Project 4" loading="lazy" >
             <h2>Restaurant Website</h2>
         </div>
-        <div class="card" onclick="openModal('College Automation System', 'assets/software/college_automation_website.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('College Automation System', 'assets/software/college_automation_website.webp', 'A College Automation System (CAS) is a comprehensive software application designed to streamline and automate various administrative tasks within a college or university. It aims to improve efficiency, reduce paperwork, and enhance overall management.')">
             <img src= "assets/software/college_automation_website.webp" alt="Project 5" loading="lazy" >
             <h2>College Automation System</h2>
         </div>
-        <div class="card" onclick="openModal('Internet Based Live Courier Tracking and Delivery System', 'assets/software/internet_based_live_courier_tracking_and_delivery.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('Internet Based Live Courier Tracking and Delivery System', 'assets/software/internet_based_live_courier_tracking_and_delivery.webp', 'An Internet-Based Live Courier Tracking and Delivery System is a web application that enables real-time tracking of courier packages from the point of pickup to delivery. It provides visibility into the entire delivery process, benefiting both customers and couriers.')">
             <img src="assets/software/internet_based_live_courier_tracking_and_delivery.webp" alt="Project 6" loading="lazy" >
             <h2>Internet Based Live Courier Tracking and Delivery System</h2>
         </div>
-        <div class="card" onclick="openModal('Inventory Management System', 'assets/software/inventory_management_system.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('Inventory Management System', 'assets/software/inventory_management_system.webp', 'An Inventory Management System (IMS) is a software application used to track and manage the storage, movement, and use of physical assets within an organization. It helps businesses maintain accurate records, optimize inventory levels, and improve efficiency.')">
             <img src="assets/software/inventory_management_system.webp" alt="Project 7" loading="lazy" >
             <h2>Inventory Management System</h2>
         </div>
-        <div class="card" onclick="openModal('Municpal Corporation Complaint Management System', 'assets/software/municipal_corporation_compliant_management_system.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('Municpal Corporation Complaint Management System', 'assets/software/municipal_corporation_compliant_management_system.webp', 'A Municipal Corporation Complaint Management System (MCCMS) is a software application designed to streamline and manage citizen complaints related to various municipal services. It provides a centralized platform for citizens to report issues and track the progress of their complaints.')">
             <img src="assets/software/municipal_corporation_compliant_management_system.webp" alt="Project 8" loading="lazy" >
             <h2>Municpal Corporation Complaint Management System</h2>
         </div>
-        <div class="card" onclick="openModal('Online Crime Management System', 'assets/software/online_crime_management_system.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('Online Crime Management System', 'assets/software/online_crime_management_system.webp', 'An Online Crime Management System (OCMS) is a web-based application designed to streamline and automate the process of reporting, investigating, and resolving crimes. It provides a centralized platform for law enforcement agencies to manage cases efficiently and improve public safety.')">
             <img src="assets/software/online_crime_management_system.webp" alt="Project 9" loading="lazy" >
             <h2>Online Crime Management System</h2>
         </div>
-        <div class="card" onclick="openModal('E-Election Voting System', 'assets/software/e_election_voting_system.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('E-Election Voting System', 'assets/software/e_election_voting_system.webp', 'The E-Election Voting System is a digital platform designed to facilitate secure, transparent, and accessible voting processes for elections conducted online. This system aims to replace traditional paper-based voting methods with an electronic solution that ensures accuracy, speed, and ease of use for both voters and election administrators. The project typically involves the development of a web-based application that allows voters to cast their votes remotely using a computer, smartphone, or any internet-enabled device.')">
             <img src="assets/software/e_election_voting_system.webp" alt="Project 10" loading="lazy" >
             <h2>E-Election Voting System</h2>
         </div>
-        <div class="card" onclick="openModal('Multi Banking System', 'assets/software/multi_banking_system.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('Multi Banking System', 'assets/software/multi_banking_system.webp', 'The Multi-Banking System is a web-based or mobile application that integrates multiple bank accounts into a single, user-friendly platform. The system enables users to perform essential banking operations like viewing account balances, making transfers, paying bills, and managing budgets. It is designed with security, ease of use, and efficiency in mind.')">
             <img src="assets/software/multi_banking_system.webp" alt="Project 11" loading="lazy" >
             <h2>Multi Banking System</h2>
         </div>
-        <div class="card" onclick="openModal('Online Banking with OTP Security', 'assets/software/online_banking_with_otp_security.webp', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...')">
+        <div class="card" onclick="openModal('Online Banking with OTP Security', 'assets/software/online_banking_with_otp_security.webp', 'The project aims to develop a secure and user-friendly online banking system that incorporates One-Time Password (OTP) security to ensure enhanced protection for users during sensitive transactions and login processes.')">
             <img src="assets/software/online_banking_with_otp_security.webp" alt="Project 12" loading="lazy" >
             <h2>Online Banking with OTP Security</h2>
         </div>
@@ -99,10 +113,10 @@
       <div class="footer-section footer-center">
         <h2>Project Domains</h2>
         <ul>
-            <li><p><a href="iot.html" style="color: white;">IoT</a></p></li>
-            <li><p><a href="vlsi.html" style="color: white;">VLSI</a></p></li>
-            <li><p><a href="embedded.html" style="color: white;"> Embedded</a></p></li>
-            <li><p><a href="software.html" style="color: white;">Software</a></p></li>
+            <li><a href="iot.html" style="color: white;">IoT</a></li>
+            <li><a href="vlsi.html" style="color: white;">VLSI</a></li>
+            <li><a href="embedded.html" style="color: white;"> Embedded</a></li>
+            <li><a href="software.html" style="color: white;">Software</a></li>
         </ul>
     </div> 
     </footer>
