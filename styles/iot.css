@@ -428,8 +428,7 @@ h1 {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  max-width: 350px;
-  /* Reduced the image width inside the pop-up */
+  max-width: 260px;
   margin: 0 auto;
   display: block;
 }
@@ -477,7 +476,7 @@ h1 {
   }
 
   .modal img {
-    max-width: 100%;
+    max-width: 50%;
   }
 }
 
@@ -567,7 +566,7 @@ footer {
   }
 
   p, a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .card {
@@ -587,7 +586,7 @@ footer {
   }
 
   p, a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .card {

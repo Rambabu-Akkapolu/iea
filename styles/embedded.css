@@ -408,7 +408,7 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    max-width: 450px; 
+    max-width: 260px; 
     margin: 0 auto;
     display: block;
 }
@@ -455,7 +455,7 @@ h1 {
     }
 
     .modal img {
-        max-width: 100%;
+        max-width: 50%;
     }
     .card h2 {
     font-size: 1.2em;
@@ -554,7 +554,7 @@ h1 {
     }
   
     p, a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
   }
   
@@ -570,7 +570,7 @@ h1 {
     }
   
     p, a {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
       .card{
         margin: 11px;
